@@ -5,20 +5,20 @@
     
     
     
-    <link>aliio.me/</link>
+    <link>/</link>
     <description>Recent content on Ali Alorainy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="aliio.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About me</title>
-      <link>aliio.me/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>aliio.me/about/</guid>
+      <guid>/about/</guid>
       <description>
         
           
