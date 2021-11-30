@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/about/</loc>
+    <loc>https://ali-io.github.io/about/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>https://ali-io.github.io/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://ali-io.github.io/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://ali-io.github.io/tags/</loc>
   </url>
 </urlset>
