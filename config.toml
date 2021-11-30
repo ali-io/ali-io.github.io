@@ -1,5 +1,5 @@
 title = "Ali Alorainy"
-baseurl = "http://aliio.me"
+baseurl = "aliio.me"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
