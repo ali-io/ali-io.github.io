@@ -25,5 +25,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.HUGO_KEY }}
-          external_repository: ali-io.github.io
           publish_dir: ./public
