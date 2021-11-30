@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        1. Introduction To Probability. ::
+        Ali Alorainy
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Before Jumping In For as long as I can remember, when i’m learning new things there is always this small gap that stands between me and getting a full grip of whatever i’m trying to learn. This can be easily bridged by some hands on exercises and spending some time experimenting and trying different values.
+Also i consider myself a visual person, so trying to visualize the process and observing the results changing became the main learning workflow."
+/>
+<meta
+  name="keywords"
+  content="aas"
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/intro-to-probability/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css" />
+
+<link rel="stylesheet" href="/style.css" />
+
+
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/img/apple-touch-icon-144-precomposed.png"
+/>
+<link rel="shortcut icon" href="/img/favicon.png" />
+
+
+<link href="/assets/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/assets/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="1. Introduction To Probability."/>
+<meta name="twitter:description" content="In this post I will be explaining the very basic concept of probability. Many might be very familiar with the topic but it can be a good refresher and reference for the upcoming posts that talks about more specific topics (random variables, inequalities, etc..)."/>
+
+
+
+<meta property="og:title" content="1. Introduction To Probability." />
+<meta property="og:description" content="In this post I will be explaining the very basic concept of probability. Many might be very familiar with the topic but it can be a good refresher and reference for the upcoming posts that talks about more specific topics (random variables, inequalities, etc..)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/intro-to-probability/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-01T15:19:40+03:00" />
+<meta property="article:modified_time" content="2021-05-01T15:19:40+03:00" /><meta property="og:site_name" content="Ali Alorainy" />
+
+
+
+
+
+
+
+  </head>
+  <body class="">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >$ /usr/ali.io</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/">Blog</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/">Blog</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h1 class="post-title"><ol>
+<li>Introduction To Probability.</li>
+</ol>
+</h1>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2021-05-01
+        </span>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+<h2 id="before-jumping-in">Before Jumping In</h2>
+<p>For as long as I can remember, when i’m learning new things there is always this small gap that stands between me and getting a full grip of whatever i’m trying to learn.
+This can be easily bridged by some hands on exercises and spending some time experimenting and trying different values.</p>
+<p>Also i consider myself a visual person, so trying to visualize the process and observing the results changing became the main learning workflow.
+My way of doing that is i just open a new file or shell and script my way through, This resulted in a growing collection of scattered material that some of them goes back to my early college days.</p>
+<p>Recently i decided to pay these files a visit refactoring what&rsquo;s still useable and enrich them with more content for the public as i&rsquo;m sure someone will find them useful. The theme of this post (and hopefully the following ones) will be <b>&ldquo;building an intuition by experiment&rdquo;</B>, I will try to provide several interactive examples that can help with that while doing less talking possible.</p>
+<p>In this post I will be explaining the very basic concept of probability. Many might be very familiar with the topic but it can be a good refresher and reference for the upcoming posts that talks about more specific topics (random variables, inequalities, etc..).</p>
+<h2 id="motivation">Motivation</h2>
+<p>In our daily life we might run into situations or problems that have some degree of uncertainty in which we need some form of <u>Probabilistic Reasoning</u> in order to make a sound decision.
+The notion of probability help with introducing the quantitative element of decision making or outcome prediction, and can be viewed as the mathematical language for quantifying uncertainty.</p>
+<p>We can think of probability as the degree of belief,
+In many cases “probability” may represent our personal judgment about how likely a particular event (e.g., price movement of a stock we own) is to occur. Probability attached to a given event is generally not based on any precise computation but is often a reasonable assessment based on our knowledge or experience. Such probability may be aptly called subjective or qualitative probability, and may not be scientifically estimated, unless the same event happens repeatedly. The other type of probability we deal with is what we may call objective or quantitative probability, which can be estimated objectively based on empirical evidence from observable events.</p>
+<p>Generally for every use-case we try to gather all involved variables and abstract them into something we call a <b>&ldquo;Probabilistic Model&rdquo;</b></p>
+<h2 id="the-probabilistic-model">The Probabilistic Model</h2>
+<p>What we mean by &ldquo;Model&rdquo; here is</p>
+<h3 id="sample-space">Sample Space</h3>
+<p>The sample space represents all possible outcomes</p>
+<h3 id="probability-law">Probability Law</h3>
+<h3 id="experiments">Experiments</h3>
+<div class="visualisation"> </div> 
+<script src = "/charts/example2.js"></script>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">get_data</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span> =&gt; <span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">get</span>(<span style="color:#a6e22e">url</span>)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> int(<span style="color:#ae81ff">55</span>)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse_instruction</span>(input_data):
+    <span style="color:#e6db74">&#34;get the needed format&#34;</span>
+
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</code></pre></div>
+    </div>
+    
+      
+    
+
+    
+      
+        
+
+      
+    
+  </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >$ /usr/ali.io</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        
+      </div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>

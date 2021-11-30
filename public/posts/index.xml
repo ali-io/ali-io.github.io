@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Ali Alorainy</title>
+    
+    
+    
+    <link>/posts/</link>
+    <description>Recent content in Posts on Ali Alorainy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 May 2021 15:19:40 +0300</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1. Introduction To Probability.</title>
+      <link>/posts/intro-to-probability/</link>
+      <pubDate>Sat, 01 May 2021 15:19:40 +0300</pubDate>
+      
+      <guid>/posts/intro-to-probability/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          In this post I will be explaining the very basic concept of probability. Many might be very familiar with the topic but it can be a good refresher and reference for the upcoming posts that talks about more specific topics (random variables, inequalities, etc..).
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
