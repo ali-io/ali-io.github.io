@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/about/</loc>
+    <loc>aliio.me/about/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>aliio.me/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>aliio.me/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>aliio.me/tags/</loc>
   </url>
 </urlset>
