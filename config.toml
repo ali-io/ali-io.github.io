@@ -25,7 +25,7 @@ paginate = 5
     logoText     = "$ /usr/ali.io"
     logoHomeLink = "/"
     # Set to a valid CSS color to change the cursor in the logo.
-    logoColor    = "#486398"
+    logoColor    = "#486396"
   
 [languages]
   [languages.en]
