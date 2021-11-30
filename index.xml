@@ -5,20 +5,20 @@
     
     
     
-    <link>https://ali-io.github.io/</link>
+    <link>http://aliio.me/</link>
     <description>Recent content on Ali Alorainy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://ali-io.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://aliio.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About me</title>
-      <link>https://ali-io.github.io/about/</link>
+      <link>http://aliio.me/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ali-io.github.io/about/</guid>
+      <guid>http://aliio.me/about/</guid>
       <description>
         
           
