@@ -1,12 +1,15 @@
 ---
 title: "About me"
 ---
- 
+
+<div style='display: flex; flex-wrap: wrap;'>
 <div> 
-<img align="left"  width="250" height="250" style="margin-right:10px" src="/img/avatar.jpeg">
+<img  width="250" height="250" style="margin-right:10px" src="/img/avatar.jpeg">
+</div>
+
+<div style='flex: 1;'>
 
 ## I'm Ali Alorainy
-</div>
 
 Living between tech and science. passionate about building products, intelligent ones.
 
@@ -14,6 +17,8 @@ Living between tech and science. passionate about building products, intelligent
 Leading [Malaa](https://malaa.tech/) and exploring market making, risk management, monetary policy and data driven decisions. 
 
 This is my free area where i write about random things i find interesting in data science, engineering, startups, management, finance, photography and music.
+</div>
+</div>
 
 <br>
 
